@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRecoilState } from 'recoil';
 
 import { userFormState } from './atom';
@@ -19,6 +19,16 @@ const SearchForm = () => {
         const newFilterState = {...filterState, ...formState};
         setFilterState(newFilterState);
     }
+
+    useEffect(() => {
+        // reset filter state on mount to keep it simple for now
+        setFilterState({
+            first_name: '',
+            last_name: '',
+            department: '',
+            country: '',        
+        });
+    }, [setFilterState]);
 
     return (
         <form className="user__form" onSubmit={handleSubmit}>
