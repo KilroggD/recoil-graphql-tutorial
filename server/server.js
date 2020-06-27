@@ -23,5 +23,5 @@ app.use('/graphql', (req, res, next) => {
 app.use('/graphql', graphqlHTTP({schema, graphiql: true}));
 
 const server = app.listen(port, () => {
-    console.log(`\nExpress listenings at http://localhost:${port} \n`);
+    console.log(`\nExpress listening at http://localhost:${port} \n`);
 });

@@ -9,9 +9,9 @@ export const filteredTodoListState = selector({
 
         switch (filter) {
             case 'Show Completed':
-                return list.filter(item => item.isComplete);
+                return list.filter(item => item.completed);
             case 'Show Uncompleted':
-                return list.filter(item => !item.isComplete);
+                return list.filter(item => !item.completed);
             default:
                 return list;
         }

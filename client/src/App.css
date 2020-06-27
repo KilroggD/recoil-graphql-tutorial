@@ -5,11 +5,25 @@ body {
 }
 
 .container {
-  padding-top: 50px;
+  padding: 50px;
   text-align: center;
 }
 
 .user__form {
   display: flex;
   justify-content: space-between;
+}
+
+.todo__item {
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;;
+}
+
+.todo__item--completed {
+  color: darkgreen;
+}
+
+.todo__linkback {
+  display: block;
+  margin-top: 15px;
 }

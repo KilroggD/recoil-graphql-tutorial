@@ -28,7 +28,7 @@ const TodoList = () => {
         return 'Loading...';
     }
     return (
-        <div className="todo__list">
+        <div className="container">
             <TodoListFilter />
             {
                 filteredTodos.map(item => {
