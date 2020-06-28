@@ -11,3 +11,6 @@
 - React JS
 - Recoil (https://recoiljs.org/)
 - CSS
+
+https://medium.com/swlh/a-quick-glance-at-recoil-d276c22c7efe
+
